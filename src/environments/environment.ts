@@ -1,3 +1,5 @@
 export const environment = {
-  apiBaseUrl: ''
+  apiBaseUrl: '',
+  spotifyClientId: '',
+  baseUrl: '',
 };

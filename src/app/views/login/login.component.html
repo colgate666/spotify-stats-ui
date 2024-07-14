@@ -2,19 +2,10 @@
   <mat-card-title class="form-title">
     <span>Log In</span>
   </mat-card-title>
-  <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
-    <mat-card-content class="form-inputs">
-      <mat-form-field appearance="outline">
-        <mat-label>Email</mat-label>
-        <input matInput formControlName="email" name="email" type="email">
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>Password</mat-label>
-        <input matInput formControlName="password" name="password" type="password">
-      </mat-form-field>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-flat-button [disabled]="!loginForm.valid" type="submit">Log In</button>
-    </mat-card-actions>
-  </form>
+  <button
+    mat-flat-button
+    [disabled]="!loginForm.valid"
+    (click)="handleSubmit()">
+    Log In with Spotify
+  </button>
 </mat-card>
